@@ -1,0 +1,25 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: spring-petclinic
+spec:
+  git:
+    url: https://github.com/vdesikanvmware/spring-demo.git
+    ref:
+      branch: main
+vdesikan@vdesikan-a01 spring-petclinic % kubectl apply -f k8s-resource.yaml 
+accelerator.accelerator.apps.tanzu.vmware.com/spring-petclinic created
+vdesikan@vdesikan-a01 spring-petclinic % more accelerator.yaml 
+accelerator:
+  displayName: spring-petclinic
+  description: spring petclinic demo for TAP beta1
+  iconUrl: https://raw.githubusercontent.com/sample-accelerators/icons/master/icon-tanzu-light.png
+  tags: []
+  options:
+  - name: optionName
+    label: Nice Label
+    display: true
+    defaultValue: ""
+engine:
+  include:
+  - '**'
