@@ -1,6 +1,6 @@
 accelerator:
-  displayName: spring-petclinic
-  description: spring petclinic demo for TAP beta1
+  displayName: spring-petclinic-demo-acc
+  description: ""
   iconUrl: https://raw.githubusercontent.com/sample-accelerators/icons/master/icon-tanzu-light.png
   tags: []
   options:
